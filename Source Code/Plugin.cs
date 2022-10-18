@@ -57,7 +57,7 @@ namespace ThatWasEasy
             thatWasEasyButton.transform.position = new Vector3(-0.028f, 0.002f, 0.011f);
             thatWasEasyButton.transform.rotation = Quaternion.Euler(-1.424f, -6.051f, 76.803f);
             thatWasEasyButton.transform.localScale = new Vector3(0.1925041f, 0.1925041f, 0.1925041f);
-            thatWasEasyButton.transform.SetParent(GameObject.Find("OfflineVRRig/Actual Gorilla/rig/body/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.01.R/").transform, false);
+            thatWasEasyButton.transform.SetParent(GorillaTagger.Instance.offlineVRRig.rightHandTransform.parent.Find("palm.01.R"), false);
 
             thatWasEasyButton.SetActive(modEnabled);
 
